@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>spring-cloud3</groupId>
+	<artifactId>spring-cloud3</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>spring-cloud3</name>
+	<description>spring-cloud3</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.13.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+  <modules>
+    <module>spring-cloud3-eureka-server</module>
+    <module>spring-cloud3-service-hi</module>
+    <module>spring-cloud3-service-ribbon</module>
+    <module>spring-cloud3-service-feign</module>
+    <module>spring-cloud3-service-zuul</module>
+    <module>spring-cloud3-config-server</module>
+    <module>spring-cloud3-config-client</module>
+    <module>spring-cloud3-server-zipkin</module>
+    <module>spring-cloud3-service-hi-zipkin</module>
+    <module>spring-cloud3-service-miya</module>
+    <module>spring-cloud3-eureka-server-jiqun</module>
+    <module>spring-cloud3-service-lucy</module>
+    <module>spring-cloud3-service-turbine</module>
+    <module>spring-cloud3-consul-miya</module>
+    <module>spring-cloud3-sleuth-zipkin-server</module>
+    <module>spring-cloud3-sleuth-user-service</module>
+    <module>spring-cloud3-sleuth-gateway-service</module>
+  </modules>
+</project>
